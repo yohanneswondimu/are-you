@@ -66,3 +66,34 @@ h1 {
   transform: translate(-50%, -50%);
   font-size: 4rem;
 }
+@media (max-width=750px) {
+  button{
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    gap: 20px; 
+  }
+  
+}
+@media (max-width=450px){
+  button{
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    gap: 20px; 
+  }
+}
+@media (max-width=250px){
+  button{
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    gap: 0px; 
+  }
+  #yes{
+    position: absolute;
+  }
+}
