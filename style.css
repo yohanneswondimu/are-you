@@ -1,0 +1,68 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Remove scrollbar */
+  height: 100%; /* Ensure full height */
+}
+
+body {
+  background: rgb(63, 63, 164);
+  color: white;
+  font-family: Arial, sans-serif; /* Add a font family for better typography */
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  height: 100vh; /* Ensures the container takes full height */
+}
+
+#yes, #no {
+  background: green;
+  width: 190px;
+  height: 50px;
+  color: white;
+  font-size: 40px;
+  border: none;  /* Remove button border */
+  border-radius: 8px; /* Rounded corners for better design */
+  cursor: pointer; /* Change cursor to pointer for better UX */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+}
+
+#yes {
+  background: green;
+  margin-left: 400px;
+}
+
+#no {
+  background: red;
+}
+
+/* Hover Effects */
+#yes:hover {
+  background: darkgreen;
+  transform: scale(1.1); /* Slightly enlarge the button when hovered */
+}
+
+#no:hover {
+  background: darkred;
+  transform: scale(1.1); /* Slightly enlarge the button when hovered */
+}
+
+img {
+  position: absolute;
+  max-width: 100%; /* Ensure the image does not overflow */
+  max-height: 100%; /* Ensure the image does not overflow */
+}
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4rem;
+}
